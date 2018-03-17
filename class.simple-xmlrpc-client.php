@@ -38,6 +38,6 @@ class Simple_XMLRPC_Client {
 			throw new Exception( sprintf( 'Server replied with a non-200 code: %d', $http_code ), $http_code );
 		}
 
-		return xml_decode_request( $response );
+		return xmlrpc_decode_request( $response, $method );
 	}
 }
