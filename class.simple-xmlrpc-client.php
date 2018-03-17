@@ -27,6 +27,10 @@ class Simple_XMLRPC_Client {
 			CURLOPT_POSTFIELDS     => $request
 		) );
 
+		if ( $this->username && $this->password ) {
+			curl_setopt( $connection, CURLOPT_USERPWD, sprintf( '%s:%s', $this->username, $this->password ) );
+		}
+
 		$response  = curl_exec( $connection );
 		$http_code = curl_getinfo( $connection, CURLINFO_HTTP_CODE );
 
