@@ -18,7 +18,7 @@ class Simple_XMLRPC_Client {
 
 		$request = xmlrpc_encode_request( $method, $args );
 
-		$connection = curl_init( $resource );
+		$connection = curl_init( $this->resource );
 
 		curl_setopt_array( $connection, array(
 			CURLOPT_RETURNTRANSFER => 1,                       // Return output as a string from curl_exec()
