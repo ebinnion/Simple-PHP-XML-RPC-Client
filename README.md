@@ -6,7 +6,7 @@ After looking, I saw a couple of tools, but most of them seemed more complex tha
 
 If you find it useful, that's great. Otherwise, I'm happy knowing that it'll make testing a bit easier in the future. :p
 
-Cheers,
+Cheers,<br>
 Eric Binnion
 
 ### Usage
